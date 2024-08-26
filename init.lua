@@ -7,6 +7,9 @@ vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
+-- Set nightfly scheme to have transparent background
+vim.g.nightflyTransparent = true
+
 -- See `:help vim.opt`
 -- Make line numbers default
 vim.opt.number = true
@@ -68,6 +71,9 @@ vim.api.nvim_create_autocmd('InsertEnter', {
     end
   end,
 })
+
+-- keymap to prompt copilot
+--vim.keymap.set('i', '<leader>Q', copilot.panel.open(), { silent = true, expr = true })
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 13

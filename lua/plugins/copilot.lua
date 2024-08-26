@@ -6,7 +6,7 @@ return {
     config = function()
       require('copilot').setup {
         suggestion = {
-          enabled = false,
+          enabled = true,
         },
       }
     end,
