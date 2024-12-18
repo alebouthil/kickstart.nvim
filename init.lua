@@ -61,22 +61,8 @@ vim.opt.inccommand = 'split'
 -- Show which line your cursor is on
 vim.opt.cursorline = true
 
--- Run copilot on insert mode enter, using bool to track
-vim.g.copilot_authenticated = false
-vim.api.nvim_create_autocmd('InsertEnter', {
-  callback = function()
-    if not vim.g.copilot_authenticated then
-      vim.g.copilot_authenticated = true
-      vim.cmd 'Copilot auth'
-    end
-  end,
-})
-
--- keymap to prompt copilot
---vim.keymap.set('i', '<leader>Q', copilot.panel.open(), { silent = true, expr = true })
-
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 13
+vim.opt.scrolloff = 15
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
