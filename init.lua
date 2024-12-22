@@ -13,7 +13,6 @@ vim.g.have_nerd_font = true
 -- Set nightfly scheme to have transparent background
 vim.g.nightflyTransparent = true
 
--- See `:help vim.opt`
 -- Make line numbers default
 vim.opt.number = true
 vim.opt.relativenumber = true
