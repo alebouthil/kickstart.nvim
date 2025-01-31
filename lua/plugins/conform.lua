@@ -5,12 +5,12 @@ return {
     cmd = { 'ConformInfo' },
     keys = {
       {
-        '<leader>f',
+        '<leader>fc',
         function()
           require('conform').format { async = true, lsp_fallback = true }
         end,
         mode = '',
-        desc = '[F]ormat buffer',
+        desc = '[F]ormat [C]ode',
       },
     },
     opts = {
@@ -24,6 +24,7 @@ return {
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        c = { 'clang-format' },
       },
     },
   },
