@@ -2,7 +2,8 @@ return {
   {
     'saghen/blink.cmp',
     dependencies = 'rafamadriz/friendly-snippets',
-    version = 'v0.*',
+    version = '1.*',
+    ---@module 'blink.cmp'
 
     opts = {
       -- 'default' for mappings similar to built-in completion
@@ -19,6 +20,7 @@ return {
       sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
       },
+      fuzzy = { implementation = 'lua' },
     },
     -- allows extending the providers array elsewhere in your config
     -- without having to redefine it
