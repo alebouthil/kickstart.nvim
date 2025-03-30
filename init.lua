@@ -113,3 +113,5 @@ require('lazy').setup {
     { import = 'plugins' },
   },
 }
+
+require 'configs.toggleterm-config'
