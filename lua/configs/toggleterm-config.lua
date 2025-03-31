@@ -34,7 +34,7 @@ function _G.set_terminal_keymaps()
   vim.api.nvim_buf_set_keymap(0, 't', '<C-j>', [[<C-\><C-n><C-W>j]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', '<C-k>', [[<C-\><C-n><C-W>k]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', '<C-l>', [[<C-\><C-n><C-W>l]], opts)
-  vim.api.nvim_buf_set_keymap(0, 'n', 'q', '<cmd>close<CR>', { noremap = true, silent = true })
+  vim.api.nvim_buf_set_keymap(0, 'n', 'q', [[:lua require"toggleterm".exec("exit",0,12)<CR>]], { noremap = true, silent = true })
 end
 
 vim.cmd 'autocmd! TermOpen term://* lua set_terminal_keymaps()'
