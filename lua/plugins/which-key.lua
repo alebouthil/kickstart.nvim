@@ -53,6 +53,7 @@ return {
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { '<leader>f', group = '[F]ind' },
         { '<leader><Tab>', group = 'Toggleterm', mode = { 'n' } },
+        { '<leader>z', group = '[Z]en mode', mode = { 'n' } },
       }
     end,
   },

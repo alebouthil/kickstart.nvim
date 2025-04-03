@@ -11,7 +11,7 @@ vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
 vim.g.have_nerd_font = true
 
 -- Set nightfly scheme to have transparent background
-vim.g.nightflyTransparent = true
+vim.g.nightflyTransparent = false
 
 -- Make line numbers default
 vim.opt.number = true
@@ -115,3 +115,4 @@ require('lazy').setup {
 }
 
 require 'configs.toggleterm-config'
+require 'configs.zen-mode'
