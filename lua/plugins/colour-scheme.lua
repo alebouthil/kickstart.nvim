@@ -1,9 +1,13 @@
 return {
-  { -- You can easily change to a different colorscheme.
+  {
+    'thesimonho/kanagawa-paper.nvim',
+    name = 'kanagawa-paper',
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
     -- Change the name of the colorscheme plugin below, and then
-    -- change the command in the config to whatever the name of that colorscheme is.
-    --
-    -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'bluz71/vim-nightfly-colors',
     name = 'nightfly',
     lazy = false,
@@ -12,7 +16,7 @@ return {
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'nightfly'
+      vim.cmd.colorscheme 'kanagawa-paper'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
