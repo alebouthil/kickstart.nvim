@@ -63,6 +63,7 @@ return {
       vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
       vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
       vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, {})
+      vim.keymap.set('n', '<leader>gi', vim.lsp.buf.implementation, {})
     end,
   },
 }
