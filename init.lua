@@ -116,3 +116,4 @@ require('lazy').setup {
 
 require 'configs.toggleterm-config'
 require 'configs.zen-mode'
+require 'configs.oil-config'
