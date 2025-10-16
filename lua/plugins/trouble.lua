@@ -30,6 +30,11 @@ return {
         desc = '[G]oto [E]rrors (Trouble)',
       },
       {
+        '<leader>td',
+        '<cmd>Trouble todo toggle<cr>',
+        desc = '[T]o [D]o',
+      },
+      {
         '<leader>Q',
         '<cmd>Trouble qflist toggle<cr>',
         desc = '[Q]uickfix List (Trouble)',
