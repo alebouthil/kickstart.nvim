@@ -55,6 +55,7 @@ return {
         { '<leader>f', group = '[F]ind' },
         { '<leader><Tab>', group = 'Toggleterm', mode = { 'n' } },
         { '<leader>z', group = '[Z]en mode', mode = { 'n' } },
+        { '<leader>o', group = '[O]il filebrowser', mode = { 'n' } },
       }
     end,
   },

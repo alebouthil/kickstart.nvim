@@ -7,3 +7,6 @@ vim.api.nvim_create_autocmd('User', {
     end
   end),
 })
+
+-- keybind to open oil
+vim.keymap.set('n', '<leader>o', '<cmd>:Oil<CR>', { desc = 'Oil' })
